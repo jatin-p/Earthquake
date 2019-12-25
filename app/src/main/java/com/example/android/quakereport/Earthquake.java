@@ -1,16 +1,16 @@
 package com.example.android.quakereport;
 
 public class Earthquake {
-    private float mMagnitude;
+    private double mMagnitude;
 
     private String mCity;
 
     private String mDate;
 
     /*
-    Constructor
+    Constructor used to create earthquakes
      */
-    public Earthquake(float magnitude, String city, String date){
+    public Earthquake(double magnitude, String city, String date){
         mMagnitude=magnitude;
         mCity=city;
         mDate=date;
@@ -19,7 +19,7 @@ public class Earthquake {
     /*
     Get Methods
      */
-    float getMagnitude(){ return mMagnitude;}
+    double getMagnitude(){ return mMagnitude;}
     String getCity(){ return mCity;}
     String getDate(){ return mDate;}
 }
